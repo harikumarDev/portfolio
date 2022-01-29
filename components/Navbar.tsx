@@ -14,7 +14,7 @@ type NavItemProps = {
 const NavItem = ({ activeItem, setActiveItem, name, route }: NavItemProps) => {
   return (
     activeItem !== name && (
-      <Link href={route}>
+      <Link href={route} scroll={false}>
         <a>
           <span
             className="hover:text-purple-800 dark:hover:text-orange-400"
